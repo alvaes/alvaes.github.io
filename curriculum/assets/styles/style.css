@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: #c4dafa;
+}
+
+
+/* header nav menu */
+.nav-menu {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 75px;
+}
+
+.menu-title {
+    padding: 20px;
+    background-color: #4d82bc;
+    border-radius: 0 40px 40px 0;
+    text-align: center;
+    box-shadow: 1px 1px 20px #84b6f4;
+}
+
+.menu-title h2 {
+    color: white;
+}
+
+.nav-menu .options {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style-type: none;
+    margin: 30px;
+}
+
+.nav-menu .options a {
+    text-decoration: none;
+    color: #4d82bc;
+    text-shadow: 1px 1px 5px #c4dafa;
+}
+
+.nav-menu .options a:hover {
+    color: black;
+}
+
+/* Main content */
+
+
+.main-content hr {
+    border: 1px solid #4d82bc;
+    box-shadow: 1px 5px 20px black;
+}
+
+.main-content {
+    background-color: #84b6f4;
+    /* border-style: dashed; */
+    color: #c4dafa;
+    border-width: 5px;
+}
+
+/* About */
+
+.about {
+    padding: 20px;
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.main-title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    color:#4d82bc;
+    /* box-shadow: 1px 1px 20px black; */
+    box-shadow: 1px 1px 10px black;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+    max-height: 400px;
+}
+
+.about-content img {
+    height: 300px;
+    max-width: 400px;
+    margin: 10px;
+    padding: 0;
+    border-radius: 50px;
+    box-shadow: 1px 1px 20px black;
+}
+
+.about-text {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about-text p {
+    color: white;
+    text-align: left;
+    max-width: 500px;
+}
+
+
+/* Personal Section */
+
+.personal {
+    background-color: white;
+    padding: 20px;
+}
+
+.personal-title {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.personal-title h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #4d82bc;
+    text-align: center;
+    color:white;
+    box-shadow: 1px 1px 10px black;
+}
+
+.personal-content ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.personal-content ul li {
+    display: flex;
+    background-color: #84b6f4;
+    border-radius: 20px;
+    text-align: center;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 10px;
+}
+
+.work {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color:#4d82bc;
+}
+
+.work-title {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* justify-items: center; */
+    gap: 20px;
+    list-style-type: none;
+}
+
+.work ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 300px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-color: #84b6f4;
+    border-radius: 20px;
+    height: 200px;
+}
+
+/* Skills Section */
+.skills {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color:#4d82bc;
+}
+
+.skills-title {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-title h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    color:#4d82bc;
+    box-shadow: 1px 1px 10px black;
+}
+
+.general {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.soft {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.computer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.network {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.soft-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.general h3 {
+    color: #4d82bc;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.general ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.general ul li {
+    text-align: center;
+    color: white;
+}
+
+/* Contacts area */
+
+.contacts {
+    background-color: white;
+    padding: 20px;
+}
+
+.contact-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact-title h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #4d82bc;
+    text-align: center;
+    color:white;
+    box-shadow: 1px 1px 10px black;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.contact-content img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.contact-content div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    justify-items: center;
+    gap: 10px;
+    color: white;
+    background-color: #4d82bc;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.contact-content a {
+    text-decoration: none;
+    color: inherit;
+}
