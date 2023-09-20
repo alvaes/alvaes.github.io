@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Basica</title>
+    <style>
+        .galeria .mini {
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+        }
+        .galeria .mini:hover {
+            cursor: pointer;
+        }
+        .galeria .visor img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeria Basica</h1>
+    <div class="galeria">
+        <img onclick="visor(1)" class="mini" src="img/img1.jpg" alt="">
+        <img onclick="visor(2)" class="mini" src="img/img2.jpg" alt="">
+        <img onclick="visor(3)" class="mini" src="img/img3.jpg" alt="">
+        <div class="visor" id="visor"></div>
+    </div>
+    <script>
+        function visor(id) {
+            let visor = document.getElementById('visor')
+            visor.innerHTML = `<img src='img/img${id}.jpg'>`
+        }
+    </script>
+</body>
+</html>

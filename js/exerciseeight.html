@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehiculo en movimiento</title>
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0;
+        }
+        h1 {
+            font: bold 1.5em arial;
+            text-align: center;
+            padding: 0.5em;
+        }
+        #visor {
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            width: 450px;
+            height: 300px;
+            overflow: hidden;
+        }
+        #fondo1 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        #fondo2 {
+            position: absolute;
+            top: 0px;
+            left: 450px;
+        }
+        #micoche {
+            position: absolute;
+            top: 180px;
+            left: 120px;
+        }
+    </style>
+</head>
+<body>
+<h1>Mi coche</h1>
+<div id="visor">
+    <div id="fondo1"><img src="img/fondocoche.gif" alt=""></div>
+    <div id="fondo2"><img src="img/fondocoche.gif" alt=""></div>
+    <div id="micoche"><img src="img/coche.gif" alt=""></div>
+</div>
+<script>
+    window.onload = function() {
+        let fondo1=document.getElementById('fondo1')
+        let fondo2=document.getElementById('fondo2')
+        let pararmover=setInterval(mover, 50)
+        setInterval(repetir, 2250)
+    }
+    let desplazar=0
+    function mover() {
+        desplazar -= 10
+        let desplazar2 = desplazar + 450
+        let posicion1 = desplazar + "px"
+        let posicion2 = desplazar2 + "px"
+        fondo1.style.left=posicion1
+        fondo2.style.left=posicion2
+    }
+    function repetir () {
+        fond1.style.left='0px'
+        fondo2.style.left='450px'
+        desplazar=0
+    }
+</script>
+</body>
+</html>
